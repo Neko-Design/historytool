@@ -40,7 +40,7 @@ target.addEventListener("drop", function(event) {
 
 /* ACTUAL FUNCTIONS */
 function readFile(source) { // Load file with FileReader and pop a notification
-    document.getElementById("searches").innerHTML = "<li>Loading...</li>"; // Tell the user we're loading, shouldnt be less than a second
+    document.getElementById("searches").innerHTML = "<li>Loading...</li>"; // Tell the user we're loading, should be less than a second
     var notification = new Notification("JSON Loaded", 
     {
             body: source.name + " Loaded Successfully",
