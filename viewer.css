@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300);
+
+    /***** **                                                  
+  ******  **** *                                               
+ **   *  * ****  **                                            
+*    *  *   **   **                                            
+    *  *          **    ***    ****                            
+   ** **           **    ***     ***  *    ***    ***  ****    
+   ** **           **     ***     ****    * ***    **** **** * 
+   ** ******       **      **      **    *   ***    **   ****  
+   ** *****        **      **      **   **    ***   **    **   
+   ** **           **      **      **   ********    **    **   
+   *  **           **      **      **   *******     **    **   
+      *            **      **      *    **          **    **   
+  ****         *    ******* *******     ****    *   **    **   
+ *  ***********      *****   *****       *******    ***   ***  
+*     ******          Ewen McCahon        *****      ***   *** 
+*
+ **/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #f3f3f3;
+    font-family: 'Lato', sans-serif;
+}
+.left {
+    width: 20%;
+    float: left;
+}
+.right {
+    width: 20%;
+    float: left;
+}
+.nav {
+    width: 100%;
+    padding: 20px 0;
+    background: #2980b9;
+    padding-left: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px #888;
+    position: fixed;
+}
+.title {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    padding: 6px 0;
+    float: left;
+}
+.upload-btn {
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    float: left;
+}
+.upload-btn:hover {
+    cursor: pointer;
+    color: #2980b9;
+    background: #fff;
+}
+.upload-btn input {
+    display: none;
+}
+.clearfix {
+    display: block;
+    width: 100%;
+    clear: both;
+}
+ul#searches {
+    max-width: 800px;
+    padding-top: 80px;
+    margin: 0 auto;
+    list-style-type: none;
+    box-shadow: 0 0 5px #bbb;
+}
+ul#searches li {
+    width: 100%;
+    line-height: 50px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    border-bottom: 1px solid #eee;
+    background: #f8f8f8;
+    font-weight: 400;
+    color: #333;
+}
+ul#searches li span {
+    color: #666;
+    line-height: 40px;
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 300;
+}
+ul#searches li span::before {
+    content: "-";
+    margin-right: 10px;
+}
+@media screen and (max-width: 610px) {
+    .title {
+        width: 100%;
+        font-size: 18px;
+    }
+    .upload-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        color: #fff;
+        background: #2980b9;
+        border: none;
+        box-shadow: 0 0 5px #777;
+    }
+    ul#searches {
+        width: 100%;
+        margin: 0;
+    }
+    ul#searches li {
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    ul#searches li span {
+        display: block;
+        margin-left: 0;
+    }
+    ul#searches li span::before {
+        content: "";
+        margin: 0;
+        line-height: 40px;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<!--
+Google Search History Viewer
+A really simple tool to view your google search history from the json files
+available from: https://history.google.com/history/
+Simply extract the archive and load a JSON file.
+
+NO DATA IS KEPT OR UPLOADED, everything is done client side, have a look in viewer.app.js
+or use a network tool of your choice.
+
+Have a lovely day.
+
+     ***** **                                                  
+  ******  **** *                                               
+ **   *  * ****  **                                            
+*    *  *   **   **                                            
+    *  *          **    ***    ****                            
+   ** **           **    ***     ***  *    ***    ***  ****    
+   ** **           **     ***     ****    * ***    **** **** * 
+   ** ******       **      **      **    *   ***    **   ****  
+   ** *****        **      **      **   **    ***   **    **   
+   ** **           **      **      **   ********    **    **   
+   *  **           **      **      **   *******     **    **   
+      *            **      **      *    **          **    **   
+  ****         *    ******* *******     ****    *   **    **   
+ *  ***********      *****   *****       *******    ***   ***  
+*     ******                              *****      ***   *** 
+*                                                              
+ ** 
+
+LICENSE
+-=-=-=-
+You are free to do whatever you like with this code AS LONG AS you attribute me.
+all you need is something like 'Based on work by Ewen McCahon' in a comment on your app page.
+-->
+<html id="drag-drop">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Search History Viewer</title>
+    <link rel="stylesheet" href="viewer.css">
+</head>
+
+<body>
+    
+    <nav class="nav">
+        <div class="left">
+            <!-- Input for JSON File -->
+            <label for="source-file" class="upload-btn">
+                <input type="file" id="source-file" name="source-file">
+                Select File
+            </label>
+        </div>
+        <h1 class="title">Google Search History Viewer</h1>
+        <div class="right">
+            <!-- Not used at the moment -->
+        </div>
+        <span class="clearfix"></span>
+    </nav>
+    
+    <div class="content">
+        <ul id="searches">
+            <li>Nothing to show yet</li>
+        </ul>
+    </div>
+    
+    <!-- Scripts after body, mainly for speed but this wont really help much at the moment -->
+    <script src="viewer.app.js"></script>
+</body>
+</html>
