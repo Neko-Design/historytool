@@ -21,9 +21,7 @@
 /* LISTENERS */
 window.addEventListener("load", function load(event){ /* REQUEST NOTIFICATION PERMISSION */
     window.removeEventListener("load", load, false);
-    Notification.requestPermission( function(status) {
-        console.log(status);
-    });
+    Notification.requestPermission();
 },false);
 var control = document.getElementById("source-file"); /* BROWSE BUTTON */
 control.addEventListener("change", function(event) {
