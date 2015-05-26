@@ -19,15 +19,18 @@
  **          Attribute if you modify or use */
 
 /* LISTENERS */
+
 window.addEventListener("load", function load(event){ /* REQUEST NOTIFICATION PERMISSION */
     window.removeEventListener("load", load, false);
     Notification.requestPermission();
 },false);
+
 var control = document.getElementById("source-file"); /* BROWSE BUTTON */
 control.addEventListener("change", function(event) {
     var files = control.files;
     readFile(files[0]);
 }, false);
+
 var target = document.getElementById("drag-drop"); /* DRAG AND DROP */
 target.addEventListener("dragover", function(event) {
     event.preventDefault();
